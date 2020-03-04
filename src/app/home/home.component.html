@@ -1,0 +1,18 @@
+<div class="row m-4"> 
+<div class="col-md-10 offset-md-1"> 
+<div class="card m-4">
+<h3 class="card-header text-center"><b style="color: rgb(112, 7, 7)">Select the forms</b></h3>
+<div class="card-body">
+<select class="browser-default custom-select" (change)="selectForm($event.target.value)">
+    <option selected>Select Form</option>
+    <option value="1">Register</option>
+    <option value="2">Login</option>
+    <option value="3">Application</option>
+  </select><br/><br/>
+  <app-register *ngIf=form1></app-register>
+  <app-login *ngIf=form2></app-login>
+  <app-application *ngIf=form3></app-application>
+</div>
+</div>
+</div>
+</div>
